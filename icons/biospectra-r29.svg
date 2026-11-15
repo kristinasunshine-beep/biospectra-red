@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="BIOSPECTRA logo mark">
+  <rect width="1024" height="1024" fill="#F7F6F2"/>
+  <g stroke="#171818" fill="none" stroke-width="20" stroke-linecap="square" stroke-linejoin="miter">
+    <rect x="228" y="228" width="568" height="568"/>
+    <circle cx="512" cy="512" r="198"/>
+    <path d="M512 228 V796"/>
+  </g>
+</svg>

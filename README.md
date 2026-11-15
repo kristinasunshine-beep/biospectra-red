@@ -37,3 +37,19 @@ Važno: animacija `assets/hero-rotation.mp4` je ista kao u prethodnoj R25 verzij
 
 ## R27 update
 - PWA / home-screen icons changed to icon-only BIOSPECTRA mark (black on white).
+
+
+## R28 — home-screen icon refinement
+- Recreated exact original sign: outlined square, interior circle and vertical centerline from top to bottom of square.
+- Reduced mark to ~55% of canvas; warm ivory background (#F7F6F2), dark mark (#171818).
+- Updated 192px, 512px, maskable, Apple Touch, and SVG icons.
+- Updated manifest/icon URLs and service-worker cache version to refresh the image.
+- Site layout, LED product renders, PET page, and approved MP4 rotation are unchanged.
+- The small Brave badge seen on Android is a launcher/browser shortcut badge, not part of the icon asset; PNG cannot remove it. Reinstall the home-screen shortcut/PWA after publishing to pick up the new design.
+
+
+## R29 — kompletan paket za objavljivanje
+- Verzija R29 sadrži *istu odobrenu smanjenu ikonicu R28* pod novim imenima fajlova radi osvežavanja PWA keša.
+- Uz R29 manifest, servisni radnik i ikone uključeni su `index.html`, `BIOSPECTRA_PET_R08.html`, odobreni video i poster u `assets/`, kao i `.nojekyll`.
+- U GitHub-u otvori ISKLJUČIVO `kristinasunshine-beep/biospectra-red`, prenesi **raspakovan sadržaj** u koren repozitorijuma i potvrdi `main`.
+- Ovaj paket ne menja odobreni hero video, izgled stranice ili PET stranicu u odnosu na R28.
