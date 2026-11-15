@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="BIOSPECTRA icon">
+  <rect width="1024" height="1024" fill="#ffffff"/>
+  <g fill="none" stroke="#000000" stroke-width="36" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="180" y="180" width="664" height="664" rx="0"/>
+    <circle cx="512" cy="512" r="232"/>
+    <path d="M512 280 V744"/>
+  </g>
+</svg>

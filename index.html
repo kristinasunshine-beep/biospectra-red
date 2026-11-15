@@ -435,6 +435,17 @@ h1{font-size:clamp(40px,4.15vw,60px)}
  .hero-image .r23-motion-toolbar{max-width:100%;}
 }
 </style>
+
+<!-- BIOSPECTRA PWA: native-like Android/Brave home-screen installation -->
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="icon" type="image/svg+xml" href="./icons/biospectra-icon.svg" />
+<link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png" />
+<meta name="theme-color" content="#171818" />
+<meta name="application-name" content="BIOSPECTRA" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="apple-mobile-web-app-title" content="BIOSPECTRA" />
+
 </head><body><div id="edition"><a class="skip-link" href="#main">Pređite na sadržaj</a>
 <header class="header"><a aria-label="BIOSPECTRA — početna" class="brand" href="#hero-title"><svg aria-hidden="true" fill="none" viewbox="0 0 36 36"><path d="M4 4h28v28H4z" stroke="currentColor" stroke-width="1.4"></path><circle cx="18" cy="18" r="10" stroke="currentColor" stroke-width="1.4"></circle><path d="M18 4v28" stroke="currentColor" stroke-width="1.4"></path></svg><span>BIOSPECTRA</span></a><nav aria-label="Glavna navigacija" id="navigation"><a href="#prica">Priča</a>
 <a href="#object">Lampa</a>
@@ -688,4 +699,16 @@ bind();
   window.addEventListener('biospectra:edition-change',mount);
   mount();
 })();
-</script></body></html>
+</script>
+<!-- PWA registration, independent of hero video controls -->
+<script>
+(() => {
+  if (!('serviceWorker' in navigator) || !window.isSecureContext) return;
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./service-worker.js', {scope:'./'})
+      .catch(err => console.warn('BIOSPECTRA PWA: service worker unavailable', err));
+  }, {once:true});
+})();
+</script>
+
+</body></html>

@@ -21,3 +21,19 @@ Sve promene iz R24, uključujući originalnu odobrenu rotaciju, isti video za te
 Otpakujte sadržaj ovog ZIP-a u koren repozitorijuma; `index.html` je glavna stranica. U GitHub Settings → Pages podesite izvor na `Deploy from a branch`, `main`, `/ (root)`.
 
 U R24 su uklonjene sve referencije na pogrešan video u datotekama paketa. Testiranje na fizičkim iOS/Android telefonima nije urađeno.
+
+
+## PWA / Brave (Android)
+
+Ovaj repozitorijum uključuje instalabilnu web-app verziju, bez promene animacije ili dizajna:
+- `manifest.webmanifest` — aplikacija BIOSPECTRA sa `display: standalone`
+- `icons/` — ikonice izvedene iz postojećeg BIOSPECTRA znaka
+- `service-worker.js` — offline HTML + poster; namerno ne presreće MP4/Range zahteve
+
+Na Android telefonu otvorite HTTPS GitHub Pages adresu u Brave-u, iz menija izaberite **Install app** (ako je ponuđeno) odnosno **Add to Home screen**. Ako browser ponudi samo prečicu, prikaz će zavisiti od verzije Brave-a. Već dodatu prečicu je možda potrebno ukloniti i dodati ponovo kako bi dobila PWA način prikaza.
+
+Važno: animacija `assets/hero-rotation.mp4` je ista kao u prethodnoj R25 verziji i učitava se direktno sa mreže. Na offline stranici ostaje poster, ne garantuje se reprodukcija videa bez interneta.
+
+
+## R27 update
+- PWA / home-screen icons changed to icon-only BIOSPECTRA mark (black on white).

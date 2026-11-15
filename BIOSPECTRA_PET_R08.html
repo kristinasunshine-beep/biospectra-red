@@ -78,7 +78,18 @@
 #spectrum .band-item span{font-size:10px!important}
 @media(max-width:680px){#spectrum.band{grid-template-columns:repeat(3,minmax(0,1fr))!important}#spectrum .band-title{grid-column:1/-1;padding:10px 0!important}#spectrum .band-item{padding:12px 8px!important}}
 </style>
-<meta content="R07 / PET 660-808-830; LAMP 660-680-850" name="biospectra-revision"/></head>
+<meta content="R07 / PET 660-808-830; LAMP 660-680-850" name="biospectra-revision"/>
+<!-- BIOSPECTRA PWA: native-like Android/Brave home-screen installation -->
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="icon" type="image/svg+xml" href="./icons/biospectra-icon.svg" />
+<link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png" />
+
+<meta name="application-name" content="BIOSPECTRA" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="apple-mobile-web-app-title" content="BIOSPECTRA" />
+
+</head>
 <body>
 <a class="skip-link" href="#main">Preskoči na sadržaj</a>
 <header class="header">
@@ -183,5 +194,17 @@ Millis & Bergh 2023: https://pmc.ncbi.nlm.nih.gov/articles/PMC9951699/
 document.querySelector('#exportBrief').addEventListener('click',()=>{let b=new Blob([brief],{type:'text/plain;charset=utf-8'}),url=URL.createObjectURL(b),a=document.createElement('a');a.href=url;a.download='BIOSPECTRA_PET_razvojni_brief_R03.txt';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),500)});
 })();
 </script>
+
+<!-- PWA registration, independent of hero video controls -->
+<script>
+(() => {
+  if (!('serviceWorker' in navigator) || !window.isSecureContext) return;
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./service-worker.js', {scope:'./'})
+      .catch(err => console.warn('BIOSPECTRA PWA: service worker unavailable', err));
+  }, {once:true});
+})();
+</script>
+
 </body>
 </html>
