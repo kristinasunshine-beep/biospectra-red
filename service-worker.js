@@ -1,15 +1,15 @@
 /* BIOSPECTRA RED: offline shell without interfering with media playback. */
-const CACHE_NAME = 'biospectra-red-pwa-r29';
+const CACHE_NAME = 'biospectra-red-pwa-r32';
 const APP_SHELL = [
   './',
   './index.html',
   './BIOSPECTRA_PET_R08.html',
   './manifest.webmanifest',
-  './icons/biospectra-r29.svg',
-  './icons/icon-r29-192.png',
-  './icons/icon-r29-512.png',
-  './icons/maskable-r29-512.png',
-  './icons/apple-touch-r29.png',
+  './icons/biospectra-r32.svg',
+  './icons/icon-r32-192.png',
+  './icons/icon-r32-512.png',
+  './icons/maskable-r32-512.png',
+  './icons/apple-touch-r32.png',
   './assets/hero-rotation-poster.webp'
 ];
 self.addEventListener('install', event => {

@@ -15,19 +15,19 @@
   "orientation": "any",
   "icons": [
     {
-      "src": "icons/icon-r29-192.png",
+      "src": "icons/icon-r32-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "icons/icon-r29-512.png",
+      "src": "icons/icon-r32-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "icons/maskable-r29-512.png",
+      "src": "icons/maskable-r32-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
@@ -40,7 +40,7 @@
       "url": "./index.html",
       "icons": [
         {
-          "src": "./icons/icon-r29-192.png",
+          "src": "./icons/icon-r32-192.png",
           "sizes": "192x192",
           "type": "image/png"
         }
@@ -52,7 +52,7 @@
       "url": "./BIOSPECTRA_PET_R08.html",
       "icons": [
         {
-          "src": "./icons/icon-r29-192.png",
+          "src": "./icons/icon-r32-192.png",
           "sizes": "192x192",
           "type": "image/png"
         }

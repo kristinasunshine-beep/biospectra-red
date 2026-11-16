@@ -1,55 +1,30 @@
-# BIOSPECTRA RED — R25 (hero naslov)
+# BIOSPECTRA RED · R32
 
-Hero naslov: **„Izvan vidljivog.”** / **“Beyond the visible.”**
+**IZVAN VIDLJIVOG.**
 
-Sve promene iz R24, uključujući originalnu odobrenu rotaciju, isti video za telefon i desktop, mobilne kontrole, dizajn i PET stranicu, ostaju neizmenjene.
+Web prezentacija BIOSPECTRA LED sistema i BIOSPECTRA PET priveska.
 
-# BIOSPECTRA RED — R24 (ispravljena animacija)
+## Otvaranje sajta
+- `index.html` — samostojeći BIOSPECTRA LED sistem; SR / EN
+- `BIOSPECTRA_PET_R08.html` — BIOSPECTRA PET, srpski jezik
+- `assets/hero-rotation.mp4` — odobrena rotacija lampe, ista na desktopu i telefonu
+- `manifest.webmanifest`, `icons/`, `service-worker.js` — Android PWA
 
-## Šta je ispravljeno
+## Postavljanje na GitHub Pages
+Upload sadržaja ZIP arhive direktno u koren repozitorijuma `biospectra-red` na grani `main` (ne upload same ZIP arhive). Zatim GitHub Pages: Settings → Pages → `main` → `/(root)`.
 
-- Odobrena animacija je **doslovno preuzeta** iz BIOSPECTRA_R20_INTERAKTIVNI_PREGLED.html (Codex original), bez ponovnog renderovanja.
-- Prirodni svetli hrast prekriva i bok; **samo postolje je crno**.
-- Bok se u početnoj prostornoj perspektivi vidi **desno**, ne levo.
-- Isti `assets/hero-rotation.mp4` i poster koristi jedinstvena `<video>` komponenta na desktopu i telefonu.
-- Nema dnevnog/noćnog režima, alternativnih mobilnih fotografija niti prebacivanja modela.
-- Zadržani su raniji mobilni playback mehanizmi (muted, playsinline, pauza/nastavak, vidljivost, reduced motion).
-- `BIOSPECTRA_PET_R08.html` je zadržan neizmenjen.
+## Važni parametri
+- Lampa: **660 / 680 / 850 nm**, dimenzije 100 × 160 × 45 mm.
+- PET: **660 / 808 / 830 nm**, ogrlica je uključena u komplet.
+- Bočni USB-C priključak, ulaz 5 V DC.
 
-## Objavljivanje na GitHub Pages
+## R32 uredničke izmene
+Obnovljeni naslovi, pasusi, stručni blokovi, FAQ, navigacioni natpisi, PET tehnički pregled i oba jezika glavne stranice. Izbačeni su neprecizni izrazi o svetlosnom motivu i termin „mat grafit”.
 
-Otpakujte sadržaj ovog ZIP-a u koren repozitorijuma; `index.html` je glavna stranica. U GitHub Settings → Pages podesite izvor na `Deploy from a branch`, `main`, `/ (root)`.
+## R32 PWA ikonica
+Zadržan je isti crni geometrijski znak na toploj svetloj pozadini, ali je njegov grafički otisak umanjen za oko 22% u odnosu na R29. Novi nazivi `r32` služe za osvežavanje Android/Brave keša. Nakon deploy-a staru prečicu ukloniti, potom ponovo instalirati sajt.
 
-U R24 su uklonjene sve referencije na pogrešan video u datotekama paketa. Testiranje na fizičkim iOS/Android telefonima nije urađeno.
+## Napomena za upit
+Postojeći obrazac priprema dokument za preuzimanje. Za stvarno primanje porudžbina potreban je zaseban, povezan kanal komunikacije ili servis za prijem upita.
 
-
-## PWA / Brave (Android)
-
-Ovaj repozitorijum uključuje instalabilnu web-app verziju, bez promene animacije ili dizajna:
-- `manifest.webmanifest` — aplikacija BIOSPECTRA sa `display: standalone`
-- `icons/` — ikonice izvedene iz postojećeg BIOSPECTRA znaka
-- `service-worker.js` — offline HTML + poster; namerno ne presreće MP4/Range zahteve
-
-Na Android telefonu otvorite HTTPS GitHub Pages adresu u Brave-u, iz menija izaberite **Install app** (ako je ponuđeno) odnosno **Add to Home screen**. Ako browser ponudi samo prečicu, prikaz će zavisiti od verzije Brave-a. Već dodatu prečicu je možda potrebno ukloniti i dodati ponovo kako bi dobila PWA način prikaza.
-
-Važno: animacija `assets/hero-rotation.mp4` je ista kao u prethodnoj R25 verziji i učitava se direktno sa mreže. Na offline stranici ostaje poster, ne garantuje se reprodukcija videa bez interneta.
-
-
-## R27 update
-- PWA / home-screen icons changed to icon-only BIOSPECTRA mark (black on white).
-
-
-## R28 — home-screen icon refinement
-- Recreated exact original sign: outlined square, interior circle and vertical centerline from top to bottom of square.
-- Reduced mark to ~55% of canvas; warm ivory background (#F7F6F2), dark mark (#171818).
-- Updated 192px, 512px, maskable, Apple Touch, and SVG icons.
-- Updated manifest/icon URLs and service-worker cache version to refresh the image.
-- Site layout, LED product renders, PET page, and approved MP4 rotation are unchanged.
-- The small Brave badge seen on Android is a launcher/browser shortcut badge, not part of the icon asset; PNG cannot remove it. Reinstall the home-screen shortcut/PWA after publishing to pick up the new design.
-
-
-## R29 — kompletan paket za objavljivanje
-- Verzija R29 sadrži *istu odobrenu smanjenu ikonicu R28* pod novim imenima fajlova radi osvežavanja PWA keša.
-- Uz R29 manifest, servisni radnik i ikone uključeni su `index.html`, `BIOSPECTRA_PET_R08.html`, odobreni video i poster u `assets/`, kao i `.nojekyll`.
-- U GitHub-u otvori ISKLJUČIVO `kristinasunshine-beep/biospectra-red`, prenesi **raspakovan sadržaj** u koren repozitorijuma i potvrdi `main`.
-- Ovaj paket ne menja odobreni hero video, izgled stranice ili PET stranicu u odnosu na R28.
+© BIOSPECTRA. Sadržaj, ilustracije i dizajn zadržavaju prava svojih nosilaca.
