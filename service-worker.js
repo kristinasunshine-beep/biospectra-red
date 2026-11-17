@@ -1,5 +1,5 @@
 /* BIOSPECTRA RED: offline shell without interfering with media playback. */
-const CACHE_NAME = 'biospectra-red-pwa-r32';
+const CACHE_NAME = 'biospectra-red-pwa-r34';
 const APP_SHELL = [
   './',
   './index.html',

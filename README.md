@@ -28,3 +28,11 @@ Zadržan je isti crni geometrijski znak na toploj svetloj pozadini, ali je njego
 Postojeći obrazac priprema dokument za preuzimanje. Za stvarno primanje porudžbina potreban je zaseban, povezan kanal komunikacije ili servis za prijem upita.
 
 © BIOSPECTRA. Sadržaj, ilustracije i dizajn zadržavaju prava svojih nosilaca.
+
+
+## R33
+Uredničko osvežavanje hero narativa i celih stranica lampe (SR/EN) i PET (SR); čuvani su izvorna animacija, vizuelni identitet i PWA komponentе.
+
+
+## R34
+Hero layout enlarged and pause control hidden on mobile. Copy uses no „spokoj”. The approved motion video is unchanged.
